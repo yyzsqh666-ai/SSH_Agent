@@ -1,0 +1,6 @@
+# Direct research dependencies; installed in the project .venv in stage 1a.
+# Exact installed snapshot including transitive dependencies: requirements-lock.txt.
+numpy
+scipy
+matplotlib
+pytest

@@ -1,0 +1,235 @@
+{
+  "recorded_at_utc": "2026-10-24T02:42:31.611061+00:00",
+  "command": ".venv/Scripts/python.exe -B -m src.ssh_topology --num-k 2001 --num-cells 20 --output-dir results/ssh_topology_run02",
+  "cwd": ".",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "numpy_version": "2.5.4",
+  "matplotlib_version": "3.11.2",
+  "bulk_core_sha256": "670c8d1bb26fee11c635f75d49962b3406aedd80d67beeae30ee668e65b36807",
+  "convention": {
+    "basis": "(A,B)",
+    "q": "t1+t2*exp(-ik)",
+    "k_direction": "-pi to +pi",
+    "w_q": "Delta arg(q)/(2*pi)",
+    "nu": "-w_q = Delta arg(q*)/(2*pi)",
+    "open_basis": "(A1,B1,...,AN,BN)",
+    "termination": "A1 and BN; cut t2 bond",
+    "lattice_constant": 1,
+    "energy_unit": "input hopping unit"
+  },
+  "winding": [
+    {
+      "t1": 1.5,
+      "t2": 0.5,
+      "num_k": 2001,
+      "sampled_min_abs_q": 1.0,
+      "circle_min_abs_q": 1.0,
+      "gap_rtol": 1e-12,
+      "gap_threshold": 2e-12,
+      "status": "defined",
+      "w_q_raw": 1.766974823035287e-17,
+      "w_q": 0,
+      "nu_raw": -1.766974823035287e-17,
+      "nu": 0,
+      "integer_error": 1.766974823035287e-17,
+      "phase_step_bound": 0.001570796326795243
+    },
+    {
+      "t1": 0.5,
+      "t2": 1.5,
+      "num_k": 2001,
+      "sampled_min_abs_q": 1.0,
+      "circle_min_abs_q": 1.0,
+      "gap_rtol": 1e-12,
+      "gap_threshold": 2e-12,
+      "status": "defined",
+      "w_q_raw": -0.9999999999999997,
+      "w_q": -1,
+      "nu_raw": 0.9999999999999997,
+      "nu": 1,
+      "integer_error": 3.3306690738754696e-16,
+      "phase_step_bound": 0.004712388980385729
+    },
+    {
+      "t1": 1.0,
+      "t2": 1.0,
+      "num_k": 2001,
+      "sampled_min_abs_q": 1.2246467991473532e-16,
+      "circle_min_abs_q": 0.0,
+      "gap_rtol": 1e-12,
+      "gap_threshold": 2e-12,
+      "status": "gap_closed",
+      "w_q_raw": null,
+      "w_q": null,
+      "nu_raw": null,
+      "nu": null,
+      "integer_error": null,
+      "phase_step_bound": null
+    }
+  ],
+  "open_chains": [
+    {
+      "num_cells": 20,
+      "num_sites": 40,
+      "t1": 1.5,
+      "t2": 0.5,
+      "edge_cells_each_end": 3,
+      "edge_weight_min": 0.9,
+      "near_zero_threshold": 0.01,
+      "edge_state_indices": [],
+      "central_indices": [
+        19,
+        20
+      ],
+      "central_energies": [
+        -1.0079646789937386,
+        1.0079646789937382
+      ],
+      "central_left_weights": [
+        0.03247053872252226,
+        0.03247053872252043
+      ],
+      "central_right_weights": [
+        0.03247053872252226,
+        0.03247053872252043
+      ],
+      "central_edge_weights": [
+        0.06494107744504451,
+        0.06494107744504087
+      ],
+      "central_splitting": 2.015929357987477,
+      "hermiticity_error": 0.0,
+      "eigenpair_max_residual": 9.43689570931383e-16,
+      "orthonormality_error": 1.7763568394002505e-15,
+      "spectral_pairing_error": 1.3322676295501878e-15,
+      "bulk_representative_index": 10
+    },
+    {
+      "num_cells": 20,
+      "num_sites": 40,
+      "t1": 0.5,
+      "t2": 1.5,
+      "edge_cells_each_end": 3,
+      "edge_weight_min": 0.9,
+      "near_zero_threshold": 0.01,
+      "edge_state_indices": [
+        19,
+        20
+      ],
+      "central_indices": [
+        19,
+        20
+      ],
+      "central_energies": [
+        -3.823962521732969e-10,
+        3.823962787046869e-10
+      ],
+      "central_left_weights": [
+        0.49931412894375843,
+        0.4993141289437586
+      ],
+      "central_right_weights": [
+        0.4993141289437584,
+        0.49931412894375854
+      ],
+      "central_edge_weights": [
+        0.9986282578875167,
+        0.9986282578875172
+      ],
+      "central_splitting": 7.647925308779838e-10,
+      "hermiticity_error": 0.0,
+      "eigenpair_max_residual": 1.0547118733938987e-15,
+      "orthonormality_error": 1.7763568394002505e-15,
+      "spectral_pairing_error": 1.3322676295501878e-15,
+      "bulk_representative_index": 10
+    }
+  ],
+  "finite_size": {
+    "t1": 0.5,
+    "t2": 1.5,
+    "sizes": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "columns": [
+      "N",
+      "E_negative",
+      "E_positive",
+      "splitting",
+      "estimate",
+      "pairing_error"
+    ],
+    "rows": [
+      [
+        4,
+        -0.016469559197762208,
+        0.016469559197762138,
+        0.032939118395524346,
+        0.03292682926829267,
+        8.881784197001252e-16
+      ],
+      [
+        8,
+        -0.00020322108674784267,
+        0.000203221086747695,
+        0.0004064421734955377,
+        0.00040644211684420995,
+        8.881784197001252e-16
+      ],
+      [
+        12,
+        -2.50890189778195e-06,
+        2.5089018974960655e-06,
+        5.017803795278016e-06,
+        5.0178037951082186e-06,
+        1.5543122344752192e-15
+      ],
+      [
+        16,
+        -3.097409752228615e-08,
+        3.097409747930494e-08,
+        6.194819500159108e-08,
+        6.19481950011167e-08,
+        1.5543122344752192e-15
+      ],
+      [
+        20,
+        -3.8239625393021135e-10,
+        3.823962769442503e-10,
+        7.647925308744616e-10,
+        7.647925308779835e-10,
+        1.5543122344752192e-15
+      ],
+      [
+        24,
+        -4.720967529138982e-12,
+        4.720915568880441e-12,
+        9.441883098019423e-12,
+        9.441883097259053e-12,
+        1.9984014443252818e-15
+      ]
+    ]
+  },
+  "checks": {
+    "winding_matches_theory": true,
+    "critical_winding_not_assigned": true,
+    "chain_solver_checks": true,
+    "trivial_has_no_near_zero_edge_states": true,
+    "nontrivial_has_two_near_zero_edge_states": true,
+    "splitting_positive_and_decreases": true,
+    "overlap_estimate_within_two_percent": true
+  },
+  "all_checks_passed": true,
+  "limitations": [
+    "Critical winding is undefined; near-zero gaps or coarse meshes return unresolved, not an integer.",
+    "Near-zero edge classification requires BOTH the stated energy and localization thresholds.",
+    "Finite-chain hybridized eigenstates can have probability at BOTH ends; single-end combinations are not exact eigenstates.",
+    "Overlap estimate is asymptotic; exponentially small splittings eventually fall below floating-point resolution.",
+    "This is a clean noninteracting chiral SSH calculation for the stated termination, not a disorder/perturbation robustness study."
+  ],
+  "publication_note": "Shared copy: machine-specific executable, working-directory and output paths were normalized on 2026-10-24. Original timestamps, versions, numerical values and checks are unchanged. Unredacted originals are retained locally and are not included in this repository."
+}

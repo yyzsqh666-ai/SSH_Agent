@@ -1,0 +1,65 @@
+{
+  "recorded_at_utc": "2026-10-17T10:06:11.153808+00:00",
+  "command": ".venv/Scripts/python.exe -B -m src.ssh_bands --num-k 1001 --output-dir results/ssh_bands_run02",
+  "cwd": ".",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "numpy_version": "2.5.4",
+  "matplotlib_version": "3.11.2",
+  "lattice_constant": 1.0,
+  "k_min": -3.141592653589793,
+  "k_max": 3.141592653589793,
+  "num_k": 1001,
+  "both_zone_edges_included": true,
+  "eigensolver": "numpy.linalg.eigh",
+  "band_order": [
+    "lower",
+    "upper"
+  ],
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 0.0,
+  "output_dir": "results/ssh_bands_run02",
+  "plot": "ssh_bands.png",
+  "cases": [
+    {
+      "t1": 1.5,
+      "t2": 0.5,
+      "numerical_gap": 2.0,
+      "analytic_gap": 2.0,
+      "gap_abs_error": 0.0,
+      "max_abs_energy_error": 4.440892098500626e-16,
+      "energy_check_passed": true,
+      "gap_check_passed": true,
+      "csv": "bands_t1_1.5_t2_0.5.csv"
+    },
+    {
+      "t1": 0.5,
+      "t2": 1.5,
+      "numerical_gap": 2.0,
+      "analytic_gap": 2.0,
+      "gap_abs_error": 0.0,
+      "max_abs_energy_error": 4.440892098500626e-16,
+      "energy_check_passed": true,
+      "gap_check_passed": true,
+      "csv": "bands_t1_0.5_t2_1.5.csv"
+    },
+    {
+      "t1": 1.0,
+      "t2": 1.0,
+      "numerical_gap": 2.4492935982947064e-16,
+      "analytic_gap": 0.0,
+      "gap_abs_error": 2.4492935982947064e-16,
+      "max_abs_energy_error": 2.5786664470395237e-15,
+      "energy_check_passed": true,
+      "gap_check_passed": true,
+      "csv": "bands_t1_1.0_t2_1.0.csv"
+    }
+  ],
+  "all_checks_passed": true,
+  "notes": [
+    "Gap is min(E_upper)-max(E_lower), evaluated on the numerical grid.",
+    "For positive hoppings the gap minimum lies at a zone edge included in this grid.",
+    "A near-zero gap at equal hoppings is judged using the stated floating-point tolerance.",
+    "Matching spectra for swapped t1/t2 do not independently establish topology."
+  ],
+  "publication_note": "Shared copy: machine-specific executable, working-directory and output paths were normalized on 2026-10-24. Original timestamps, versions, numerical values and checks are unchanged. Unredacted originals are retained locally and are not included in this repository."
+}
